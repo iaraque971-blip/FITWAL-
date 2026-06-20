@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head><title>Prueba FITWAL</title></head>
+<head><title>Prueba FITWAL</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+</head>
 <body style="background:#0A0A0B; color:#F5F2EA; font-family:sans-serif; padding:40px;">
-<h1>Si ves esto, funciona</h1>
-<p>Ahora vamos a agregar React poco a poco.</p>
+<div id="root">Cargando...</div>
+<script>
+  const e = React.createElement;
+  ReactDOM.createRoot(document.getElementById("root")).render(e("h1", null, "React funciona"));
+</script>
 </body>
 </html>
